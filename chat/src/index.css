@@ -1,0 +1,62 @@
+.chatWindow{
+  border: 1px solid rgb(122, 115, 115);
+  border-radius: 15px;
+  max-width: 410px;
+  min-width: 120px;
+  height: 500px;
+
+}
+
+
+.inputArea{
+  margin-top: 5px;
+  display: flex;
+}
+
+.chatInput{
+  border-radius: 15px;
+  width: 400px;
+}
+
+.inputButton{
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url("./assets/sendArrow.png");
+  margin-top: 5px;
+  margin-left: -40px;
+}
+
+.arrowBtn{
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.inputButton:active{
+  background-color: greenyellow;
+}
+
+.chatWindow{
+  display: flex;
+}
+
+.chatArea{
+  margin: 10px;
+  
+}
+
+.message{
+  margin-top: 10px;
+  margin-right: 2px;
+  right: 0;
+  border: 1px solid black;
+  border-radius: 15px ;
+  min-width: 100px;
+  max-width: 200px;
+  min-height: 30px;
+}
+
+
+.usermsg{
+  margin-left: 270%;
+}

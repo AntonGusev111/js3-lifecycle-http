@@ -1,0 +1,87 @@
+.Notes{
+  display: flex;
+}
+
+.UpdateButtom{
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 50%;
+  border: 0.5px solid black;
+  background-image: url('assets/arrows.png');
+  background-size: 29px 25px;
+}
+
+.cards{
+  display: inline-flex;
+}
+
+.card{
+  margin-left: 25px;
+  border: 1px solid black;
+  width: 200px;
+  min-height: 150px;
+  padding: 25px;
+}
+
+.cross{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0.5px solid black;
+  background-color: aliceblue;
+  background-image: url('assets/cross.png');
+  background-size: 30px 30px;
+  margin-left: 210px;
+  margin-top: -39px;
+}
+
+.cross:hover{
+  cursor: pointer;
+}
+
+.cross:active{
+  background-color: red;
+}
+
+.Input{
+  margin-top: 30px;
+  border: 1px solid black;
+  width: 500px;
+  height: 150px;
+}
+
+textarea{
+  width: 450px;
+  height: 145px;
+  border: none;
+}
+
+.InputButton{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 0.5px solid black;
+  background-color: aliceblue;
+  background-image: url('assets/sendArrow.png');
+  background-size: 33px 29px;
+}
+
+.InputButton:hover{
+  cursor: pointer;
+}
+
+
+
+.InputButton:active{
+  background-color: green;
+}
+
+.UpdateButtom:hover{
+  cursor: pointer;
+}
+
+.UpdateButtom:active{
+  background-color: green;
+}
