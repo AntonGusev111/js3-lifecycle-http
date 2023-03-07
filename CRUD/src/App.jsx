@@ -8,7 +8,7 @@ function App() {
   const [cardsList, setList] = useState([''])  
 
 
-  async function getCards () { 
+  async function getCards () {
     let response = await fetch('http://localhost:7777/notes');
     let text = await response.json();
     setList([...text])
@@ -16,14 +16,18 @@ function App() {
 
   useEffect(() => {
     getCards()
-  })
+  },[])
+
+  const updateCards = ()=>{
+    setTimeout(getCards, 70)
+  }
 
 
   return (
     <>
       <Notes onChange={getCards}/>
-      <Cards cardsList={cardsList} onChange = {getCards}/>
-      <InputNewCard onChange = {getCards}/>   
+      <Cards cardsList={cardsList} onChange = {updateCards}/>
+      <InputNewCard onChange = {updateCards}/>   
     </>
   )
 }

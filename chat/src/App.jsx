@@ -39,11 +39,15 @@ function App() {
 
   const handleUpdateMList = ()=>{
     console.log('work')
-    getMessageList ();
+    setTimeout(getMessageList,70);
   }
 
-  useEffect(getUserId);
-  setTimeout(getMessageList,5000)
+  useEffect(getUserId,[]);
+
+  useEffect(()=>{
+    setInterval(getMessageList,5000)
+  },[])
+  
  
 
   return (
